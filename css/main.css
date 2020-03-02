@@ -25,7 +25,7 @@ html, body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   height: 600px;
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -119,7 +119,7 @@ html, body {
   background-color: #b71234;
 }
 
-@media (min-width: 100px) {
+@media (min-width: 0px) and (max-width: 600px) {
   .content {
     top: 50%;
     height: 500px;
@@ -134,7 +134,6 @@ html, body {
   #mark {
     top: -100%;
     height: 100%;
-    /* display: none; */
   }
   #timer {
     font-size: 0.5rem;
@@ -148,14 +147,14 @@ html, body {
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 601px) and (max-width: 768px) {
   #mark {
     top: -150%;
     height: 150%;
     display: inherit
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) and (max-width: 992px) {
   .content {
     top: 45%;
     height: 500px;
@@ -172,7 +171,7 @@ html, body {
     font-size: 3rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 993px) and (max-width: 1200px) {
   #mark {
     top: -300%;
     height: 300%;
@@ -192,7 +191,7 @@ html, body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1201px) {
   .content {
     width: 55%
   }
