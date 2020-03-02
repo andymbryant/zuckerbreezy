@@ -119,6 +119,20 @@ html, body {
   background-color: #b71234;
 }
 
+@media (min-width: 0px) {
+  #mark {
+    top: -200%;
+    height: 200%;
+  }
+  .numbers {
+    font-size: 1rem;
+  }
+  .days, .hours, .minutes, .seconds {
+    padding: 8px;
+    letter-spacing: 2px;
+  }
+}
+
 @media (min-height: 0px) and (max-height: 479px) {
   .content {
     height: 250px;
@@ -196,9 +210,16 @@ html, body {
 
 @media (min-width: 601px) and (max-width: 768px) {
   #mark {
-    top: -150%;
-    height: 150%;
-    display: inherit
+    top: -200%;
+    height: 200%;
+  }
+  .numbers {
+    font-size: 1.58rem;
+  }
+  .days, .hours, .minutes, .seconds {
+    padding: 8px;
+    letter-spacing: 3px;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
@@ -211,7 +232,7 @@ html, body {
     height: 250%;
   }
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 
   .numbers {
