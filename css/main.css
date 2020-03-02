@@ -133,28 +133,6 @@ html, body {
   }
 }
 
-@media (min-height: 0px) and (max-height: 479px) {
-  .content {
-    height: 250px;
-  }
-  .subtitle {
-    font-size: 1rem;
-  }
-  #bear {
-    width: 60%;
-  }
-  #timer {
-    font-size: 0.5rem;
-  }
-  .numbers {
-    font-size: 1.2rem;
-  }
-  .days, .hours, .minutes, .seconds {
-    padding: 10px;
-    letter-spacing: 3px;
-  }
-}
-
 @media (min-width: 480px) and (max-width: 600px) {
   .content {
     top: 50%;
@@ -275,6 +253,31 @@ html, body {
   #mark {
     top: -300%;
     height: 300%;
+  }
+}
+
+@media (min-height: 0px) and (max-height: 479px) {
+  .content {
+    height: 250px;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+  }
+  #bear {
+    width: 60%;
+  }
+  #timer {
+    font-size: 0.5rem;
+  }
+  .numbers {
+    font-size: 1.2rem;
+  }
+  .days, .hours, .minutes, .seconds {
+    padding: 10px;
+    letter-spacing: 3px;
   }
 }
 
