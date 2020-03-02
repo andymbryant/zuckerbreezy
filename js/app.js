@@ -1,5 +1,5 @@
 const party = new Date("August 15, 2020 05:00:00").getTime();
-setInterval(function() {
+function getTime() {
   const today = new Date().getTime();
 
   // get the difference
@@ -16,8 +16,8 @@ setInterval(function() {
   document.getElementById("hours").textContent = hours;
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
-
-},1);
+  setTimeout(getTime, 1000)
+}
 
 let active = false;
 const mark = document.getElementById("mark")
@@ -42,5 +42,5 @@ function slide(init) {
   }
   setTimeout(slide, 1);
 }
-
+getTime()
 slide(true)
